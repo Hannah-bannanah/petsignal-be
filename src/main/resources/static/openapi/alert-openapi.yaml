@@ -266,7 +266,10 @@ components:
         photoFilenames: ["photo1.png"]
       allOf:
         - $ref: '#/components/schemas/Alert'
-        - $ref: '#/components/schemas/PhotoFileNames'
+        - type: object
+          properties:
+            photoFilenames:
+              $ref: '#/components/schemas/PhotoFileNames'
     CreateAlertResponse:
       example:
         username: "hannah-bannanah"
