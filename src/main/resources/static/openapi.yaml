@@ -13,12 +13,12 @@ tags:
     description: Operations about users
   - name: Subscriptions
     description: Operations about subscriptions
-  - name: Notifications
-    description: Operations about notifications
 
 servers:
   - url: http://localhost:8080
     description: Local development server
+  - url: http://ec2-13-48-147-82.eu-north-1.compute.amazonaws.com:8080
+    description: aws development server
 
 security:
   - basicAuth: [ ]

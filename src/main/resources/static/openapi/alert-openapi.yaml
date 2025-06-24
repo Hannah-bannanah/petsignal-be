@@ -244,7 +244,7 @@ components:
         countryCode:
           type: string
       required:
-        - user
+        - username
         - type
         - date
         - postalCode

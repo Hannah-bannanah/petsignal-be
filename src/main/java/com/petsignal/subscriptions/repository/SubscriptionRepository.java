@@ -13,7 +13,7 @@ public interface SubscriptionRepository extends JpaRepository<Subscription, Long
           SELECT s
           FROM Subscription s
           JOIN FETCH s.postCodes p
-          WHERE s.alertType = :alertType
+          WHERE (s.alertType = null OR s.alertType = :alertType)
             AND p.postalCode = :postalCode
             AND p.countryCode = :countryCode
       """)
