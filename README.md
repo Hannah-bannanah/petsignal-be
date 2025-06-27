@@ -70,14 +70,19 @@ Once the application is running, you can access the API documentation at:
 
 ```
 src/main/java/com/petsignal/
-├── alert/            # Alert operations
-├── config/           # Configuration classes
-├── exception/        # Custom exception classes and handlers
-├── photos/           # Photo operations
-├── postcodes/        # Postcode operations
-├── s3bucket/         # Interaction with AWS s3 bucket
-├── scheduler/        # Scheduled jobs
-├── user/             # User operations
+├── alert/                 # Alert operations
+├── config/                # Configuration classes
+├── countries/             # Country operations
+├── emailnotifications/    # Email operations
+├── exception/             # Custom exception classes and handlers
+├── notifications/         # Notification management
+├── photos/                # Photo operations
+├── postcodes/             # Postcode operations
+├── posts/                 # Post operations
+├── s3bucket/              # Interaction with AWS s3 bucket
+├── scheduler/             # Scheduled jobs
+├── subscriptions/         # Subscription operations
+├── user/                  # User operations
 └── PetSignalApplication.java
 ```
 
