@@ -283,7 +283,10 @@ components:
         breed: "mixed"
         postalCode: "04001"
         countryCode: ES
-        photoUrls: ["https:s3.region.aws.com/bucket/photo1__abc123.png"]
+        photoUrls: [{
+          "s3objectKey": "",
+          "presignedUrl": "https:s3.region.aws.com/bucket/photo1__abc123.png"}
+        ]
       allOf:
         - $ref: '#/components/schemas/Alert'
         - type: object
